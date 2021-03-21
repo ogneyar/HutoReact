@@ -1,7 +1,1 @@
-SetEnv GHOST_NODE_VERSION_CHECK false
-PassengerStartupFile server.js
-PassengerResolveSymlinksInDocumentRoot on
-Require all granted
-PassengerAppType node
-PassengerAppRoot /home/a0525484/domains/hutoryanin.online/public_html
-Options -MultiViews
+DirectoryIndex build/index.html
