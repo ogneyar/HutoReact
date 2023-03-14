@@ -1,1 +1,2 @@
-node server
+@rem start server
+npm run start
