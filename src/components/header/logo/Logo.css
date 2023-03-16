@@ -1,0 +1,30 @@
+
+.Logo {
+    height: 70px;
+    font-size: calc(10px + 2vmin);
+    color:rgb(212, 212, 212);
+    position: fixed;
+    z-index: 12;
+    padding: 0 10px;
+}
+
+.Logo_img {
+    height: 7vmin;
+    pointer-events: none;
+}
+
+.Logo_img {
+    animation: Logo-spin infinite 20s linear;
+    padding: 0 10px;
+    width: 70px;    
+    height: 70px;
+}
+
+@keyframes Logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

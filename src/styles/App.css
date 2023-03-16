@@ -1,41 +1,4 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 7vmin;
-  pointer-events: none;
-}
-
-.App-title {
-  padding: 0 10px;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-}
-
-.App-header {
-  height: 70px;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: calc(10px + 2vmin);
-  color:rgb(212, 212, 212);
-  position: fixed;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

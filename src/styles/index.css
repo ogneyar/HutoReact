@@ -1,16 +1,153 @@
+
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #282c34;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+button {
+	background: none;
+	font-size: 16px;
+}
+/* buttons классы от Bootstrap'а */
+
+.btn {	
+	padding: 10px 15px;	
+	border-radius: 5px;	
+	margin: 1px 0;	
+	display: -webkit-inline-flex; 
+	display: inline-flex;	
+	line-height: 1;
+	cursor: pointer;
+}
+
+/* BUTTON DANGER */
+.btn-danger {
+	border: 1px solid Crimson;
+	background: Crimson; /* red FireBrick Crimson*/
+	color: White;
+}
+.btn-danger:hover {	
+	border: 1px solid FireBrick;
+	background: FireBrick; /* Brown DarkRed */
+}
+.btn-outline-danger {
+	border: 1px solid Crimson;
+	color: Crimson;
+}
+.btn-outline-danger:hover {
+	background: Crimson;
+	color: White;
+}
+/* ------------- */
+
+/* BUTTON DARK */ 
+.btn-dark {
+	border: 1px solid #333; /* Black */
+	background: #333;
+	color: White;
+}
+.btn-dark:hover {
+	border: 1px solid Black;
+	background: Black;
+}
+.btn-outline-dark {
+	border: 1px solid #333;
+	color: #333;
+}
+.btn-outline-dark:hover {
+	background: #333;
+	color: White;
+}
+/* ----------- */ 
+
+/* BUTTON PRIMARY */
+.btn-primary {
+	border: 1px solid DodgerBlue; /* DeepSkyBlue Blue DodgerBlue RoyalBlue */
+	background: DodgerBlue;
+	color: White;
+}.btn-primary:hover {
+	border: 1px solid RoyalBlue;
+	background: RoyalBlue;
+}
+.btn-outline-primary {
+	border: 1px solid DodgerBlue;
+	color: DodgerBlue;
+}
+.btn-outline-primary:hover {	
+	background: DodgerBlue;
+	color: White;
+}
+/* -------------- */
+
+/* BUTTON SUCCESS */
+.btn-success {
+	border: 1px solid ForestGreen; /* Green MediumSeaGreen SeaGreen DarkGreen ForestGreen */
+	background: ForestGreen;
+	color: White;
+}.btn-success:hover {
+	border: 1px solid Green;
+	background: Green;
+}
+.btn-outline-success {
+	border: 1px solid ForestGreen;
+	color: ForestGreen;
+}
+.btn-outline-success:hover {
+	background: ForestGreen;
+	color: White;
+}
+/* -------------- */
+
+/* BUTTON WARNING */
+.btn-warning {
+	border: 1px solid Orange; /* Orange Gold GoldenRod Peru */
+	background: Orange;
+	color: White;
+}
+.btn-warning:hover {
+	border: 1px solid Peru;
+	background: Peru;
+}
+.btn-outline-warning {
+	border: 1px solid Orange;
+	color: Orange;
+}
+.btn-outline-warning:hover {
+	background: Orange;
+	color: White;
+}
+/* -------------- */
+
+
+/* BUTTON VIOLET */ 
+.btn-violet {
+	border: 1px solid BlueViolet; /* Black */
+	background: BlueViolet;
+	color: White;
+}
+.btn-violet:hover {
+	border: 1px solid Purple;
+	background: Purple;
+}
+.btn-outline-violet {
+	border: 1px solid BlueViolet;
+	color: BlueViolet;
+}
+.btn-outline-violet:hover {
+	background: BlueViolet;
+	color: White;
+}
+/* ----------- */ 
+
+

@@ -1,24 +1,23 @@
 
-import { Button } from 'react-bootstrap';
+// import { Button } from 'react-bootstrap'
 
-import logo from './assets/logo.svg';
+import Header from './components/header/Header'
+// import logo from './assets/logo.png'
 
-import './styles/App.css';
+import './styles/App.css'
 
 
 function App() {
     return (
         <div className="App">
             
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1 className="App-title">ХуторянинЪ</h1>
-            </header>
 
-            <Button variant="danger">Danger</Button>
-            <Button variant="secondary">Secondary</Button>
+            <Header />
+
+            {/* <Button variant="danger">Danger</Button>
+            <Button variant="secondary">Secondary</Button> */}
         </div>
     );
 }
 
-export default App;
+export default App
