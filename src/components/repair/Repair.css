@@ -1,0 +1,28 @@
+
+.Repair {
+    width:100vw;
+    height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
+    background-color: lightgrey;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+.Repair_box {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding:5px;
+    border-radius: 10px;
+}
+
+.Repair_boxTitle {
+    text-align: center;
+    padding:5px;
+}
+
+.Repair_boxBody {
+    text-align: center;
+    padding:5px;
+}

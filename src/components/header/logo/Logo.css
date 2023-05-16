@@ -2,7 +2,7 @@
 .Logo {
     height: 70px;
     font-size: calc(10px + 2vmin);
-    color:rgb(212, 212, 212);
+    /* color:rgb(212, 212, 212); */
     position: fixed;
     z-index: 12;
     padding: 0 10px;

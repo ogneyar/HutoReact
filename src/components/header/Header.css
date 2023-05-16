@@ -1,5 +1,7 @@
 
 .Header {
     text-align: center;
+    height: var(--main-header-height);
+    background-color: var(--main-header-color);
 }
 

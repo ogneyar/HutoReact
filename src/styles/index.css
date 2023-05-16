@@ -1,4 +1,11 @@
 
+:root {
+	--main-header-color: #f7f7f7;
+	--main-header-height: 70px;
+	--main-footer-color: #f7f7f7;
+	--main-footer-height: 70px;
+}
+
 body {
     margin: 0;
     padding: 0;

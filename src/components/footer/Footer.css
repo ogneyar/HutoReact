@@ -1,0 +1,13 @@
+
+.Footer {
+    height: var(--main-footer-height);
+    background-color: var(--main-footer-color);
+    width: 100%;
+}
+
+.Footer_brand {
+    /* width: 100%; */
+    /* background-color: green; */
+    text-align: left;
+    padding: 20px 20px;
+}
