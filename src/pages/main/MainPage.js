@@ -1,8 +1,6 @@
 // MainPage
 
-import Header from '../../components/header/Header'
 import Repair from '../../components/repair/Repair'
-import Footer from '../../components/footer/Footer'
 
 import './MainPage.css'
 
@@ -10,13 +8,14 @@ import './MainPage.css'
 const MainPage = () => {
     return (
         <div 
-            className="MainPage"
-        >
-            <Header />
-
+            className="MainPage globalStylePage"
+        > 
+            <div 
+                className="MainPage_title globalStylePage_title"
+            >
+            </div>
+            
             <Repair />
-
-            <Footer />
         </div>
     );
 }

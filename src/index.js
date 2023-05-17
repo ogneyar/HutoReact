@@ -1,16 +1,27 @@
 
 import React from 'react'
 import * as ReactDOM from 'react-dom'
-import App from './App'
+import { BrowserRouter } from 'react-router-dom'
+import { QueryParamProvider } from 'use-query-params'
+import { ReactRouter6Adapter } from 'use-query-params/adapters/react-router-6'
+
+// import AppRouter from './components/AppRouter'
+// import Header from './components/header/Header'
+// import Footer from './components/footer/Footer'
 
 import './styles/index.css'
+import App from './App'
 
 
 const container = document.getElementById('root')
 
 const element =   
-    <React.StrictMode>
-        <App />
+    <React.StrictMode>        
+        <BrowserRouter>
+            <QueryParamProvider adapter={ReactRouter6Adapter}>
+                <App />
+            </QueryParamProvider>
+        </BrowserRouter>
     </React.StrictMode>
 
 ReactDOM
