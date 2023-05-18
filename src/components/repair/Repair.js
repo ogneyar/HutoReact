@@ -3,10 +3,10 @@
 import './Repair.css'
 
 
-const Repair = () => {
+const Repair = (props) => {
 
     return (
-        <div className="Repair">
+        <div className={props.minimal ? "Repair" : "Repair Repair_maxHeight"}>
             <div className="Repair_box">
                 <div className="Repair_boxTitle">
                     <h1>СЕРВИСНОЕ ОБСЛУЖИВАНИЕ САЙТА</h1>

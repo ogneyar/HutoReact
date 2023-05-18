@@ -1,5 +1,6 @@
 // PromoPage
 
+import Repair from '../../components/repair/Repair'
 
 import './PromoPage.css'
 
@@ -12,7 +13,7 @@ const PromoPage = () => {
             <div
                 className="PromoPage_title globalStylePage_title"
             >
-                PromoPage
+                <Repair />
             </div>
         </div>
     )

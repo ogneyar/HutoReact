@@ -1,5 +1,6 @@
 // SupportPage
 
+import Repair from '../../components/repair/Repair'
 
 import './SupportPage.css'
 
@@ -12,7 +13,7 @@ const SupportPage = () => {
             <div
                 className="SupportPage_title globalStylePage_title"
             >
-                SupportPage
+                <Repair />
             </div>
         </div>
     )

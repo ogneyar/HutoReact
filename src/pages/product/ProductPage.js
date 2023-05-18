@@ -1,5 +1,6 @@
 // ProductPage
 
+import Repair from '../../components/repair/Repair'
 
 import './ProductPage.css'
 
@@ -12,7 +13,7 @@ const ProductPage = () => {
             <div
                 className="ProductPage_title globalStylePage_title"
             >
-                ProductPage
+                <Repair />
             </div>
         </div>
     )

@@ -2,3 +2,35 @@
 .MainPage {}
 
 .MainPage_title {}
+
+/* .buttonAboutMe {
+    cursor: pointer;
+    color: green;
+} */
+
+/* .MainPage_body { 
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+} */
+
+/* .MainPage_body_image {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: green;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+}
+.MainPage_body_image img {    
+    background-color: rgb(231, 5, 17);
+    width: 50%;
+    padding: 0;
+    margin: 0;
+} */
+
+

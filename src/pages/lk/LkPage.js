@@ -1,5 +1,6 @@
 // LkPage
 
+import Repair from '../../components/repair/Repair'
 
 import './LkPage.css'
 
@@ -12,7 +13,7 @@ const LkPage = () => {
             <div
                 className="LkPage_title globalStylePage_title"
             >
-                LkPage
+                <Repair />
             </div>
         </div>
     )

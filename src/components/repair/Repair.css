@@ -1,11 +1,16 @@
 
 .Repair {
-    width:100vw;
-    height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
+    /* width:100vw; */
+    /* height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
     background-color: lightgrey;
     display: flex;    
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+}
+
+.Repair_maxHeight {
+    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
 }
 
 .Repair_box {
