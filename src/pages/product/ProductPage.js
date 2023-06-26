@@ -11,7 +11,7 @@ const ProductPage = () => {
             className="ProductPage globalStylePage"
         >
             <div
-                className="ProductPage_title globalStylePage_title"
+                // className="ProductPage_title globalStylePage_title"
             >
                 <Repair />
             </div>

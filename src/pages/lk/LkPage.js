@@ -11,7 +11,7 @@ const LkPage = () => {
             className="LkPage globalStylePage"
         >
             <div
-                className="LkPage_title globalStylePage_title"
+                // className="LkPage_title globalStylePage_title"
             >
                 <Repair />
             </div>

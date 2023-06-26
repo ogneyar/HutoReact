@@ -1,19 +1,20 @@
 
-.App {}
+.App {
+    width: 100%;
+}
 
 .App_AppRouter {
-    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
-    /* height: 100vh; */
+    /* min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
 }
 
 .globalStylePage {
-    width:100vw;
-    min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height));
-    background-color: lightgrey;}
+    /* min-height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
+    /* background-color: lightgrey; */
+}
 
 .globalStylePage_title {
 	background: #f7f7f7;
+    /* background-color: green; */
 	text-align: center;
-	/* max-width: 960px; */
 	padding: 60px 10px 20px 10px;
 }

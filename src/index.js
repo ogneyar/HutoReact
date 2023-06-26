@@ -5,10 +5,6 @@ import { BrowserRouter } from 'react-router-dom'
 import { QueryParamProvider } from 'use-query-params'
 import { ReactRouter6Adapter } from 'use-query-params/adapters/react-router-6'
 
-// import AppRouter from './components/AppRouter'
-// import Header from './components/header/Header'
-// import Footer from './components/footer/Footer'
-
 import './styles/index.css'
 import App from './App'
 

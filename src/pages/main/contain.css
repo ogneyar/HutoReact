@@ -5,10 +5,10 @@
 	-ms-flex:  1 1 auto; 
 	flex: 1 1 auto;
 	min-width: 220px;
-	margin: 15px;		
-	
+	margin: 15px;
 	text-align: center;
 }
+/* box - для товаров */
 .contain .box {
 	position: relative;
 	width: 100%;
@@ -102,57 +102,9 @@
 .contain .box:hover .product {
 	transform: translate3d(-50%,-50%,70px) rotate(-3deg);
 }	
+/* --------------- */
 
 
-.contain-home {
-	margin-top: -100px;
-	z-index: 7;
-}
-#about-text {
-	display: none;	
-}
-.about-btn {
-    cursor: pointer;
-	border: 2px solid #333;
-	color: #333;
-	padding: 5px 30px;	
-	border-radius: 5px;	
-	margin: 1px 0;	
-	display: inline-flex;	
-	line-height: 0.5;
-}
-
-@media (min-width: 501px) and (max-width: 770px){
-	.contain-home {
-		margin-top: -80px;
-	}
-	.about-btn {
-		border: 1px solid #333;
-		padding: 2px 10px;	
-		border-radius: 5px;	
-		line-height: 0.2;
-	}
-	.about-btn h4 {
-		font-size: 12px;
-	}
-}
-@media (max-width: 500px){
-	.contain-home {
-		margin-top: -65px;
-	}
-	.about-btn {
-		border: 1px solid #333;
-		padding: 2px 10px;	
-		border-radius: 5px;	
-		line-height: 0.2;
-	}
-	.about-btn h4 {
-		font-size: 12px;
-	}
-	.caption {
-		font-size: 16px;
-	}
-}
 
 /* ------------------------- */
 /* раздел ПОЛЬЗА (или выгода)*/

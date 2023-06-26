@@ -3,10 +3,13 @@
     /* width:100vw; */
     /* height: calc(100vh - var(--main-header-height) - var(--main-footer-height)); */
     background-color: lightgrey;
+    /* background-color: green; */
     display: flex;    
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 .Repair_maxHeight {

@@ -11,7 +11,7 @@ const PromoPage = () => {
             className="PromoPage globalStylePage"
         >
             <div
-                className="PromoPage_title globalStylePage_title"
+                // className="PromoPage_title globalStylePage_title"
             >
                 <Repair />
             </div>
