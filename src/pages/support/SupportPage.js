@@ -2,7 +2,9 @@
 
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
+
 import Repair from '../../components/repair/Repair'
+import { sendMail } from '../../http/mailAPI'
 
 import './SupportPage.css'
 
@@ -12,8 +14,17 @@ const SupportPage = () => {
     const [ email, setEmail ] = useState("")
     const [ message, setMessage] = useState("")
 
-    const onClickButtonSend = () => {
-        alert(email + message)
+    const onClickButtonSend = async () => {
+        // alert(email + message)
+        if (email && message) {
+            let response = await sendMail(email, message)
+            if (response === "send") {
+                alert("Письмо отправлено!")
+                window.location.href = "/"
+            }else {
+                alert("Ошибка отправки.")
+            }
+        }
     }
 
     return (
