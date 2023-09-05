@@ -34,24 +34,26 @@ $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPDebug = 0;
  
-$mail->Host =  $dotENV["SMTP_HOST"];
-$mail->Port = $dotENV["SMTP_PORT"];
-$mail->Username = $dotENV["SMTP_LOGIN"];
+$mail->Host = "ssl://smtp.mail.ru"; //$dotENV["SMTP_HOST"];
+$mail->Port = 465; //$dotENV["SMTP_PORT"];
+$mail->Username = "hutoryanin_test@mail.ru"; //$dotENV["SMTP_LOGIN"];
 $mail->Password = $dotENV["SMTP_PASS"];
  
 // От кого
-$mail->setFrom($dotENV["SMTP_LOGIN"], 'ХуторянинЪ сайт');		
+// $mail->setFrom($dotENV["SMTP_LOGIN"], 'ХуторянинЪ сайт');
+$mail->setFrom("hutoryanin_test@mail.ru", "ХуторянинЪ сайт");
  
 // Кому
-$mail->addAddress('ogneyar@hutoryanin.ru', 'Огънеяръ');
+$mail->addAddress("ogneyar@hutoryanin.ru", "Огънеяръ");
  
 // Тема письма
 $mail->Subject = "Письмо с сайта hutoryanin.ru";
  
 // Тело письма
-$body = '<p><strong>operacion = '.$_GET["operacion"].'</strong></p>';
-$body .= '<p><strong>email = '.$_GET["email"].'</strong></p>';
-$body .= '<p><strong>message = '.$_GET["message"].'</strong></p>';
+$body = '<p><strong>operacion</strong></p>';
+// $body = '<p><strong>operacion = '.$_GET["operacion"].'</strong></p>';
+// $body .= '<p><strong>email = '.$_GET["email"].'</strong></p>';
+// $body .= '<p><strong>message = '.$_GET["message"].'</strong></p>';
 $mail->msgHTML($body);
  
 // Приложение
