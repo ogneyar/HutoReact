@@ -19,8 +19,10 @@
         "use-query-params": "^2.2.1"
     },
     "scripts": {
-        "start": "cross-env REACT_APP_ENV=develop react-scripts --openssl-legacy-provider start",
-        "build": "cross-env REACT_APP_ENV=production react-scripts --openssl-legacy-provider build",
+        "_start": "cross-env REACT_APP_ENV=develop react-scripts --openssl-legacy-provider start",
+        "start": "cross-env REACT_APP_ENV=develop react-scripts start",
+        "_build": "cross-env REACT_APP_ENV=production react-scripts --openssl-legacy-provider build",
+        "build": "cross-env REACT_APP_ENV=production react-scripts build",
         "dev": "nodemon server/server.js"
     },
     "browserslist": {
