@@ -1,9 +1,10 @@
 // SupportPage
 
 import { useState } from 'react'
-import { Button } from 'react-bootstrap'
+import { Button, Spinner } from 'react-bootstrap'
 
-import Repair from '../../components/repair/Repair'
+// import Repair from '../../components/repair/Repair'
+// import Loading from '../../components/Loading'
 import { sendMail } from '../../http/mailAPI'
 
 import './SupportPage.css'
@@ -13,19 +14,35 @@ const SupportPage = () => {
 
     const [ email, setEmail ] = useState("")
     const [ message, setMessage] = useState("")
+    const [ loader, setLoader] = useState(false)
 
     const onClickButtonSend = async () => {
         // alert(email + message)
         if (email && message) {
+            setLoader(true)
             let response = await sendMail(email, message)
-            if (response === "send") {
+            if (response) {
                 alert("Письмо отправлено!")
                 window.location.href = "/"
             }else {
                 alert("Ошибка отправки.")
             }
+            setLoader(false)
         }
     }
+
+    if (loader)  
+    return (
+        <div className="SupportPage globalStylePage">
+            <div className="SupportPage_box">
+                <Spinner animation="border" role="status">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </div>
+        </div>
+    )
+
+    // if (loader) return <Loading />
 
     return (
         <div 
