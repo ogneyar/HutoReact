@@ -14,13 +14,13 @@ class mailController {
             await mailService.send(process.env.ADMIN_EMAIL, body) 
                 .then(data => {
                     // data = JSON.parse(JSON.stringify(data))
-                    if (data.errno) response = false
+                    if (data.errno || data.code) response = false
                     else response = true
-                    console.log(JSON.stringify(data))
+                    // console.log(JSON.stringify(data))
                 })
                 .catch(err => {
                     response = false
-                    console.log(err)
+                    // console.log(err)
                 })
 
             return res.json(response)
