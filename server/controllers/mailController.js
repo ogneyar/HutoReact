@@ -16,11 +16,11 @@ class mailController {
                     // data = JSON.parse(JSON.stringify(data))
                     if (data.errno) response = false
                     else response = true
-                    // console.log(JSON.stringify(data))
+                    console.log(JSON.stringify(data))
                 })
                 .catch(err => {
                     response = false
-                    // console.log(err)
+                    console.log(err)
                 })
 
             return res.json(response)
