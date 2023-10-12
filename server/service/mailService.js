@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 class MailService {
 
     secure = false
-    secure = true
+    // secure = true
 
     constructor() {
         this.transporter = nodemailer.createTransport({
