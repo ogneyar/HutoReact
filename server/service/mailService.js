@@ -14,7 +14,8 @@ class MailService {
             auth: {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD
-            }
+            },
+            logger: true
         })
     }
 
@@ -27,7 +28,6 @@ class MailService {
                 text: '',
                 html: `<div><h2>Сообщение от ${data.email}</h2><p>${data.message}</p></div>`
             })
-            console.log(process.env.SMTP_USER)
             
             return response
         
@@ -59,7 +59,7 @@ class MailService {
                     },
                     {   // use URL as an attachment
                         filename: 'text4.txt',
-                        path: 'https://raw.github.com/nodemailer/nodemailer/master/LICENSE'
+                        path: 'https://raw.github.com/ogneyar/HutoReact/master/server/service/file.txt'
                     },
                     {   // encoded string as an attachment
                         filename: 'text5.txt',
@@ -71,7 +71,6 @@ class MailService {
                     }
                 ]
             })
-            console.log(process.env.SMTP_USER)
             
             return response
         
