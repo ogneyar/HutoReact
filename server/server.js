@@ -20,8 +20,7 @@ const CORS_URL = process.env.CORS_URL || "http://hutoryanin.ru"
 const CORS_URL_SECURE = process.env.CORS_URL_SECURE || "https://hutoryanin.ru"
 
 let whitelist = [
-    CORS_URL, CORS_URL_SECURE, 
-	'http://localhost:3000', 'http://www.localhost:3000',
+    CORS_URL, CORS_URL_SECURE, 'http://localhost:3000', 
     'http://www.hutoryanin.ru', 'https://www.hutoryanin.ru'
 ]
 let corsOptionsDelegate = function (req, callback) {

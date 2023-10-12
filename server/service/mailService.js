@@ -20,14 +20,14 @@ class MailService {
 
     async send(to, data) {
         try {
-            console.log(process.env.SMTP_USER)
             let response = await this.transporter.sendMail({
                 from: process.env.SMTP_USER,
                 to,
                 subject: 'Сообщение с сайта ХуторянинЪ!',
                 text: '',
-                html: `<div><h1>Сообщение от ${data.email}</h1><p>${data.message}</p></div>`
+                html: `<div><h2>Сообщение от ${data.email}</h2><p>${data.message}</p></div>`
             })
+            console.log(process.env.SMTP_USER)
             
             return response
         
