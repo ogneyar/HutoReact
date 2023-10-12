@@ -4,7 +4,7 @@ const nodemailer = require('nodemailer')
 class MailService {
 
     secure = false
-    // secure = true
+    secure = true
 
     constructor() {
         this.transporter = nodemailer.createTransport({
@@ -20,7 +20,7 @@ class MailService {
 
     async send(to, data) {
         try {
-            // console.log(process.env.SMTP_USER)
+            console.log(process.env.SMTP_USER)
             let response = await this.transporter.sendMail({
                 from: process.env.SMTP_USER,
                 to,
