@@ -48,6 +48,7 @@ app.use('/api', routerApi)
 // app.use('/', routerBots)
 // app.use('/', routerOthers)
 // для не существующих роутов
+app.get('/', (req, res) => res.status(200).send('Hell o! Server Hutoryanin Run.'))
 app.get('*', (req, res) => res.status(404).sendFile(__dirname + '/static/404.html'))
 
 // Обработка ошибок, последний middleware
