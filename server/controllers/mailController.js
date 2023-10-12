@@ -11,6 +11,7 @@ class mailController {
             if (!body || body.email === undefined) body = req.query
             if (!body || body.email === undefined) return next(res.json( { error: 'Отсутствуют необходимые параметры!' } ))
             let response = false
+            console.log(process.env.ADMIN_EMAIL)
             await mailService.send(process.env.ADMIN_EMAIL, body) 
                 .then(data => {
                     if (data.errno || data.code) console.log(JSON.stringify(data))
