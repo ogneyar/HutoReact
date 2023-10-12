@@ -15,7 +15,7 @@ class MailService {
                 user: process.env.SMTP_USER,
                 pass: process.env.SMTP_PASSWORD
             },
-            logger: true
+            logger: process.env.SMTP_LOGGER
         })
     }
 
