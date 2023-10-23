@@ -14,7 +14,7 @@ const crypto = require('crypto');
 //function mailServer(config_ = {}, spamc, logger) {
 function mailServer(config_ = {}, logger) {
     const config = Object.assign({
-        port: 25,
+        port: 1125,
     }, config_);
 
     const PORT = config.port || 25;
