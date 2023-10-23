@@ -72,7 +72,7 @@ function mailServer(config_ = {}, logger) {
 
 function webSocketServer(config_ = {}, logger) {
     const config = Object.assign({
-        port: 12321,
+        port: 12312,
     }, config_);
 
     const PORT = 12321;//config.port;
