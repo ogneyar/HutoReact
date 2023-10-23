@@ -1,6 +1,7 @@
 
 telnet 127.0.0.1 25
-telnet 194.67.112.14 25
+telnet 194.67.112.14 1125
+telnet hutoryanin.ru 1125
 
 EHLO [127.0.0.1]
 AUTH LOGIN bG9naW4K
@@ -9,4 +10,5 @@ AUTH LOGIN bG9naW4K
 
 openssl s_client -starttls smtp -crlf -connect 127.0.0.1:25
 openssl s_client -starttls smtp -crlf -connect 194.67.112.14:1125
+openssl s_client -starttls smtp -crlf -connect hutoryanin.ru:1125
 
