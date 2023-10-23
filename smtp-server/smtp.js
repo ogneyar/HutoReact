@@ -75,7 +75,7 @@ function webSocketServer(config_ = {}, logger) {
         port: 12312,
     }, config_);
 
-    const PORT = 12321;//config.port;
+    const PORT = config.port;
     let isFile = false;//! PORT.match(/^\d+$/);
 
     if (isFile && fs.existsSync(PORT)) {
