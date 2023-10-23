@@ -229,7 +229,7 @@ const mail = mailServer({
 
 const wss = webSocketServer({
     // port: '/var/run/hypemail.sock',
-    port: 25,
+    port: 12125,
 }, logger);
 
 const mailer = nodeMailer();
