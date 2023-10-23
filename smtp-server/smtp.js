@@ -17,7 +17,7 @@ function mailServer(config_ = {}, logger) {
         port: 1125,
     }, config_);
 
-    const PORT = config.port || 25;
+    const PORT = config.port || 1125;
     const HOST = config.host || '0.0.0.0';
     const server = new SMTPServer(Object.assign(config, {
         onData(stream, session, callback) {
