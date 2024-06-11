@@ -14,11 +14,11 @@ import './Menu.css'
                     <a className="btn btn-danger home" href="/">ХуторянинЪ</a>
                 </div>
                 <nav className="line-menu nav">
-                    {/* <a class="btn btn-outline-dark" href="/public/1">Публикации</a> */}
+                    <a class="btn btn-outline-dark" href="/public/esp8684-wroom-01c">Публикации</a>
                     <a className="btn btn-outline-primary" href="/products">Товары</a> 
-                    <a className="btn btn-outline-success" href="/promo">Акции</a>
+                    {/* <a className="btn btn-outline-success" href="/promo">Акции</a> */}
                     <a className="btn btn-outline-warning" href="/support">Тех.поддержка</a>
-                    <a className="btn btn-outline-violet" href="/lk">Л.К.</a>
+                    {/* <a className="btn btn-outline-violet" href="/lk">Л.К.</a> */}
                 </nav>
             </div>
 
